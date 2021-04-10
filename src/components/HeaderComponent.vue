@@ -34,7 +34,7 @@
 }
 
 .container {
-  height: 61px;
+  height: 64px;
 }
 
 .menu {

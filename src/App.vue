@@ -10,14 +10,12 @@
 import { mapActions } from 'vuex';
 
 export default {
-  components: {},
   methods: {
     ...mapActions({
       fetchCats: 'fetchCats',
       fetchLikedCats: 'fetchLikedCats',
     }),
   },
-  computed: {},
   created() {
     this.fetchCats();
     this.fetchLikedCats();
@@ -34,6 +32,6 @@ export default {
 }
 
 .header-component {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 </style>

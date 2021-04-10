@@ -14,6 +14,7 @@
 import { mapState, mapActions } from 'vuex';
 import CardsGrid from '../components/CardsGrid.vue';
 
+// переменная для дебаунса функции бесконечного скролла
 let debounce = false;
 
 export default {
@@ -31,8 +32,8 @@ export default {
       if (debounce) return;
       const scrollPosition = document
         .body.scrollHeight - (window.innerHeight + document.documentElement.scrollTop);
-      // "Магическое" число 3 (три пикселя) выбрано вместо 0, чтобы подгрузка срабатывала
-      // когда скролл почти внизу но не совсем.
+      // "Магическое" число 3 (три пикселя) выбрано вместо 0, чтобы подгрузка новых котиков
+      // срабатывала, когда скролл почти внизу, но не совсем.
       // Задержка в 800мс для того, чтобы функция не срабатывала несколько раз подряд.
       if (Math.abs(scrollPosition) < 3) {
         this.fetchCats();

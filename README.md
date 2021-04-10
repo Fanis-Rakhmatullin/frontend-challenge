@@ -1,24 +1,16 @@
-# frontend-challenge
+# Тестовое задание Uchi.ru
 
-## Project setup
-```
-npm install
-```
+## Команды npm:
+* npm install
+* npm run serve - запускает dev сервер
+* npm run build - сборка prod
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Особенности разработки:
+* Разработано с использованием Vue + Vuex + Vue-router;
+* Линтер: ESLint (airbnb);
+* Лайкнутые котики хранятся в localStorage;
+* Старался написать код так, чтобы он не нуждался в комментариях, но в паре мест комментарии есть.
+* Приложение работает на мобильных устройствах (до iPhone 5 точно);
+* Реализована бесконечная прокрутка.
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

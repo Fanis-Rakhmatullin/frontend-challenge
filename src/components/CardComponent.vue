@@ -42,7 +42,6 @@ export default {
       this.$refs.card.style.bottom = '0';
     },
   },
-  computed: {},
 };
 </script>
 
@@ -73,8 +72,8 @@ export default {
     background: url("../assets/svg/heart.svg") no-repeat;
     cursor: pointer;
     position: absolute;
-    bottom: 10px;
-    right: 5px;
+    bottom: 5px;
+    right: 3px;
     opacity: 0;
     transition: 0.5s;
     &:hover {

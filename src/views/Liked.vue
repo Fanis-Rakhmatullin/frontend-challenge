@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapState } from 'vuex';
 import CardsGrid from '../components/CardsGrid.vue';
 
 export default {
@@ -18,11 +18,6 @@ export default {
   computed: {
     ...mapState({
       likedCats: (state) => state.likedCats,
-    }),
-  },
-  methods: {
-    ...mapActions({
-      fetchCats: 'fetchCats',
     }),
   },
 };
