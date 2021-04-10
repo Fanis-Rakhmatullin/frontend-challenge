@@ -1,0 +1,18 @@
+@import "base";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --header-color: #2196F3;
+  --header-active-item: #1E88E5;
+  --font-size: 14px;
+}
+
+html, body {
+  width: 100%;
+}
+
+.container {
+  margin-left: 62px;
+  margin-right: 62px;
+}
